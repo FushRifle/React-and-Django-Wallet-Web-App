@@ -1,0 +1,218 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f7fc;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card img {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .card .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .card .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .mt-3 {
+    margin-top: 20px;
+  }
+  
+  .mt-4 {
+    margin-top: 40px;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .qr-code-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    .card {
+      padding: 20px;
+    }
+  
+    .card img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .card .btn {
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .card img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .card .btn {
+      padding: 6px 12px;
+    }
+  }
+  /* Profile Page */
+.profile-card {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .qr-code-small {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  .qr-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .qr-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Modal Styling */
+  .qr-code-large {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .profile-card {
+      width: 90%;
+    }
+  
+    .qr-code-large {
+      width: 45%;
+    }
+  }
+
+
+/* Ensure modal pops up at the top of the screen */
+.modal-dialog {
+    z-index: 1050; /* Keep modal above everything */
+    margin-top: 5vh; /* Adjust margin so it's at the top but not touching the navbar */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligns modal to the top */
+    min-height: 100vh; /* Ensures it covers the screen properly */
+  }
+  
+  /* Make modal content visually appealing */
+  .modal-content {
+    border-radius: 12px; /* Smooth rounded corners */
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25); /* More prominent shadow for a "pop" effect */
+    background-color: white; /* Clean background */
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+  }
+  
+  /* Style the QR Code inside the modal */
+  .qr-code-large {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .modal-dialog {
+      margin-top: 3vh; /* Adjusts position for smaller screens */
+    }
+  
+    .qr-code-large {
+      width: 90%;
+    }
+  }
+  

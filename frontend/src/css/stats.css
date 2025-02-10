@@ -1,0 +1,127 @@
+\/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f7fc;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card .card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  color: green;
+}
+
+.p-3 {
+  color: white;
+}
+
+.bg-danger {
+  background-color: #dc3545 !important;
+  color:white !important;
+}
+
+.text-white {
+  color: white !important;
+}
+
+.line-chart-wrapper {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;  /* Ensure the wrapper uses the full width */
+  padding: 20px; /* Add padding for better spacing */
+}
+
+.line-chart-wrapper .recharts-wrapper {
+  width: 90%; /* Make the chart take 80% of the container width */
+  max-width: 1000px; /* Set a maximum width for the chart */
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .d-flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .line-chart-wrapper {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .line-chart-wrapper .recharts-wrapper {
+    width: 90%; /* Reduce chart width on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}

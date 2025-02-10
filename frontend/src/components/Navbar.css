@@ -1,0 +1,89 @@
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;  /* Set background color */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  /* Add shadow */
+  padding: 10px 0;
+  border-radius: 30px;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;  /* Adjust the width */
+  z-index: 9999;
+  position: relative;
+  flex-direction: row;
+}
+
+/* Navigation Items */
+.nav-item {
+  color: #333;
+  font-size: 24px;  /* Icon size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s; /* Smooth transition */
+  border-radius: 50%;  /* Round corners for each icon */
+  flex-direction: column;
+}
+
+.nav-item .nav-label {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #666;
+}
+
+.nav-item:hover {
+  color: #f0a500; /* Hover color */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Active Nav Item */
+.nav-item.active {
+  color: #3f80fe;  /* Active link color */
+  transform: scale(1.2);  /* Slight zoom effect on active */
+  font-weight: bold; /* Make active tab bold */
+}
+
+.nav-item.active .nav-label {
+  color: #3f80fe; /* Active text color */
+}
+
+/* Centered Scan Icon */
+.scan-icon {
+  position: absolute;
+  top: -30px;  /* Adjust the position above the navbar */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+}
+
+/* Responsive Adjustments for Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%;  /* Make navbar full width on smaller screens */
+  }
+
+  .nav-item .nav-label {
+    display: none; /* Hide labels on small screens */
+  }
+}
+
+.nav-item.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px; /* Adjust distance from text */
+  left: 0;
+  width: 100%;
+  height: 4px; /* Thickness of underline */
+  background-color: #007bff; /* Change to match your theme */
+  border-radius: 2px;
+}

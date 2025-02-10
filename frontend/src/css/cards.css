@@ -1,0 +1,87 @@
+/* Center the card container */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 100%;
+}
+
+/* Style the card content */
+.card-content {
+    padding: 20px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 70%;
+    height: 40vh;
+}
+
+/* Card text styling */
+.card-text p {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Mastercard logo */
+.card-logo {
+    font-size: 40px;
+    margin-top: 10px;
+    color: gold;
+    position: absolute;  
+    bottom: 10px;        
+    right: 10px;         
+    width: 100px;   
+    height: auto;
+    background-size: contain;  
+    display: inline-block;
+  }
+
+/* Position the + button in the top-left */
+.add-button-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.add-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Hover effect for + button */
+.add-button:hover {
+    background: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-content {
+        width: 90%;
+    }
+
+    .add-button {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
